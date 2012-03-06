@@ -1,4 +1,4 @@
-[>85;95;0c]This repository contains a utility for cleaning up intermediate files.
+This repository contains a utility for cleaning up intermediate files.
 The basic pattern captured by this module is to create multiple
 temporary files, perform some external operations, and then remove the
 temporary files.  This pattern is used so pervasively in my work, that
