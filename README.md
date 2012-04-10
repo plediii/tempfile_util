@@ -1,7 +1,13 @@
 # tempfile_util
 
+## Example
+
 This repository contains a utility for cleaning up intermediate files.
 
+
+Here is an example involving several ways to communicate temporary resources to `tempfile_util`.
+
+```python
     with open('foo', 'w') as foo_file:
         foo_file.write('foo this world')
 
@@ -17,6 +23,7 @@ This repository contains a utility for cleaning up intermediate files.
             hello_file.write('goodbye world')
 
         tfs.add_name('goodbye')
+```
 
 
 After the above `with` block closes, the files, `foo`, the randomly
@@ -27,5 +34,11 @@ is set, the intermediate files will be created and used as normal, but
 will not be deleted.
 
 
-	 
+## Installation
 
+Clone `tempfile_util` into your python `site-packages` directory.
+
+```bash
+      cd your_python_site-packages
+      git clone git://github.com/plediii/tempfile_util
+```
